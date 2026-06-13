@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App - 할 일 목록</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>할 일 목록</h1>
+      <div id="todo-container">
+        <!-- 할 일 입력 폼 -->
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="새로운 할 일을 입력하세요" required />
+          <button type="submit">추가</button>
+        </form>
+        <!-- 할 일 목록 출력 영역 -->
+        <ul id="todo-list"></ul>
+      </div>
+      <button id="logout-btn">로그아웃</button>
+    </div>
+    <script type="module" src="/src/todo/todo.js"></script>
+  </body>
+</html>
